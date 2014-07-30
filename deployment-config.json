@@ -1,0 +1,8 @@
+{
+  "type": "ftp",
+  "host": "ftp.fedef.net",
+  "user": "5329556@aruba.it",
+  "password": "bu83ecz5dg",
+  "port": "21",
+  "remote_path": "www.fedef.net/site"
+}

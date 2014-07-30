@@ -13,7 +13,6 @@ a img {
     border: 0 none;
 }
 
-
 /*****GENERAL*****/
 a{
 	color: #000000;
@@ -23,19 +22,19 @@ a:hover {
     transition: top 0.12s ease-out 0s;
 }
 h1{
-	
+
 }
 
 /*****HTML + BODY*****/
 html{
 	height: 100%;
 }
-body{	
-	
+body{
+
 	background: /*url("img/bg_body.png") no-repeat scroll center center*/ #FAFAFA;
-	
+
 	/*background: url("img/bg-gradient-sand.png") repeat-x scroll 0 0px, url("img/bg-sand.png") repeat scroll 0 0px, none repeat scroll 0 0 #F5F1E8;*/
-	
+
 	font-family: 'Merriweather Sans', sans-serif;
 	font-weight: 300;
 	/*background: url("img/bullet.png");*/
@@ -48,6 +47,7 @@ body{
 /*****HEADER*****/
 #container > header{
 	position: fixed;
+  z-index: 10;
 	padding:0;
 	width: 100%;
 	line-height: 74px;
@@ -175,16 +175,15 @@ header #description{
 		}
 
 /*****CONTENT*****/
-#content{	
+#content{
 	padding-top: 100px;
 }
 #content a:hover{
 }
 #presentation{
 	margin: auto;
-	margin-bottom:100px;
+  height: 100px;
 	text-align: center;
-	
 }
 #presentation h1{
 	font-size: 150%;
@@ -200,33 +199,43 @@ header #description{
 	color: #000000;
 }
 #portfolio{
-	
-	padding:50px;
-	height: 220px;
-
+  padding: 25px;
+	height: 200px;
 }
-#portfolio #showcase{
+#portfolio ul#showcase{
 	margin: auto;
-	max-width: 1376px;
+	max-width: 1336px;
 	text-align: center;
 }
 ul#showcase li{
-	float: left; 
-	margin: 10px;
-	height: 100%; 
+	float: left;
+  margin: 0 0.5%;
+  width: 24%;
+	height: 196px;
 	min-height: 1px;
-	border-bottom: 4px solid rgb(166,210,245);
 	list-style-type: none;
-	background-color: #FFFFFF;
+  border-radius: 3px;
 }
+  #casaenergia{
+    background: #6FCD55;
+  }
+  #amministrazionimmobiliari{
+    background: #FF0208;
+  }
+  #commercioequogrosseto{
+    background: #910039;
+  }
+  #ilsassolinobianco{
+    background: #FFFFFF;
+  }
 ul#showcase li div{
-	position: relative; 
-	border-bottom: none;
-	width: 324px;
+	position: relative;
+	border-bottom: 4px solid transparent;
 	height: 200px;
-	background: none repeat scroll 0 0 rgb(166,210,245);
-	opacity: 0.3;
+  background: rgba(255,255,255,0.4);
 }
+
+
 ul#showcase li div p{
 	position: absolute;
 	bottom: 20px;
@@ -239,16 +248,12 @@ ul#showcase li div p{
 /*****FOOTER*****/
 
 #container > footer {
-	position:fixed;
-	bottom:0;
-	width: 100%;
+  position: relative;
 	height: 150px;
 	background-color: #273037;
 }
 #container > footer #stripe{
-	
-	
-	margin-top: 50px;
+	padding-top: 50px;
 	height:11px;
 	text-align: center;
 	color: #000000;
@@ -261,8 +266,6 @@ ul#showcase li div p{
 #container > footer #stripe a:hover{
 	color: #FFFFFF;
 	text-shadow: 3px 3px 3px #0A35B5, -3px -3px 3px #0A35B5;
-	
-
 }
 #container > footer #stripe p{
 	margin: -1px 0;

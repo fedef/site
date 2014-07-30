@@ -1,3 +1,4 @@
+
 <?php include_once 'header.php';?>
 
 <section id="container">
@@ -42,12 +43,11 @@
 		</section>
 		<section id="portfolio">
 			<ul id="showcase">
-				<li><div><a href="http://www.casaenergia.biz"><p>casaenergia</p></a></div></li>
-				<li><div><a href="http://www.amministrazionimmobiliari.com"><p>amministrazionimmobiliari</p></a></div></li>
-				<li><div><a href="http://www.commercioequogrosseto.it"><p>commercioequogrosseto</p></a></div></li>
-				<li><div><a href="http://www.ilsassolinobianco.org"><p>sassolinobianco</p></a></div></li>
+				<li id="casaenergia"><div><a href="http://www.casaenergia.biz"><p>casaenergia</p></a></div></li>
+				<li id="amministrazionimmobiliari"><div><a href="http://www.amministrazionimmobiliari.com"><p>amministrazionimmobiliari</p></a></div></li>
+				<li id="commercioequogrosseto"><div><a href="http://www.commercioequogrosseto.it"><p>commercioequogrosseto</p></a></div></li>
+				<li id="ilsassolinobianco"><div><a href="http://www.ilsassolinobianco.org"><p>sassolinobianco</p></a></div></li>
 			</ul>
 		</section>
 	</div>
-
 <?php include_once 'footer.php';?>
