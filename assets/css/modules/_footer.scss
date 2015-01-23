@@ -1,0 +1,51 @@
+/*****FOOTER*****/
+
+#container > footer {
+  clear: both;
+  position: relative;
+  border-top: 2px solid #f8c47f;
+  border-bottom: 4px solid #f8c47f;
+  padding: 10px;
+  height: 130px;
+  background-color: #636363;
+  box-shadow: 0 0 5px 3px #f8c47f;
+}
+  #container > footer #stripe{
+    padding-top: 50px;
+    height:11px;
+    text-align: center;
+    color: #000000;
+  }
+    #container > footer #stripe a{
+      height:11px;
+      color: #A8D5FC;
+      text-shadow: none;
+    }
+    #container > footer #stripe a:hover{
+      *color: #FFFFFF;
+      font-weight: bold;
+      *text-shadow: 3px 3px 3px #0A35B5, -3px -3px 3px #0A35B5;
+    }
+    #container > footer #stripe p{
+      margin: -1px 0;
+      padding: 0;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #f8c47f;
+    }
+    #container > footer #stripe img{
+      position: relative;
+      top: 1px;
+      height: 11px;
+    }
+
+  #container > footer #internetdefenseleague{
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    font-size: 10px;
+  }
+    #internetdefenseleague img{
+      width: 25px;
+      height: 25px;
+    }

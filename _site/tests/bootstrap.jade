@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    title Jade Bootstrap page
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    //link(rel="stylesheet", href="assets/css/main.css")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js")
+  
+  body
+    
+    .container
+      .row
+        .col-md-4
+          h2 SiteName
+          
+        ul.col-md-8.list-inline.text-right(style="margin-top:20px")
+          li
+            a(href=""): .glyphicon.glyphicon-envelope NewsLetter
+          li
+            a(href=""): .glyphicon.glyphicon-leaf RSS
+          li
+          li
+            form.form-inline(role="form")
+              .form-group
+                label.sr-only Email Address
+                input-form-control(type="email", placeholder="Enter Email")
+                button.btn.btn-default(type="submit") Sign Up!   
+      nav.row
+        .col.sm-12 
+        ul.nav.nav-tabs(style="background: #eeeeee; padding: 20px 10px 0; border-radius: 5px 5px 0 0")
+          li.active: a(href="") Books
+          li: a(href="") Books
+          li: a(href="") Books
+          li: a(href="") Books
+          li: a(href="") Books
+          li: a(href="") Books
