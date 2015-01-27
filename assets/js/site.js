@@ -3,23 +3,27 @@ $( document ).ready(function() {
 	var copyrightYear = $("#copyright-year").get(0);
 	copyrightYear.innerHTML = getAnno();
 
-	var bordo;
+	var siteThumbs = $("ul#showcase li div");
 
-	$("ul#showcase li div").on("mouseenter", function(){
+//indicizza le anteprime in miniatura (thumbnails o thumbs)
+	siteThumbs.each(function(index){
+		$(this).attr('rel', 'thumb'+(index+1));
+	});
+
+
+	siteThumbs.on("mouseenter", function(){
 		$(this).animate({
 			backgroundColor: "rgba(255,255,255,0)"
 			}, 500, function() {
 			// Animation complete.
 		});
-
 	});
-	$("ul#showcase li div").on("mouseleave", function(){
+	siteThumbs.on("mouseleave", function(){
 		$(this).animate({
 			backgroundColor: "rgba(255,255,255,0.4)"
 		}, 100, function() {
 			// Animation complete.
 		});
-
 	});
 /*
 	$items = $("ul#showcase li");
