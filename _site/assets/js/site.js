@@ -11,20 +11,7 @@ $( document ).ready(function() {
 	});
 
 
-	siteThumbs.on("mouseenter", function(){
-		$(this).animate({
-			backgroundColor: "rgba(255,255,255,0)"
-			}, 500, function() {
-			// Animation complete.
-		});
-	});
-	siteThumbs.on("mouseleave", function(){
-		$(this).animate({
-			backgroundColor: "rgba(255,255,255,0.4)"
-		}, 100, function() {
-			// Animation complete.
-		});
-	});
+
 /*
 	$items = $("ul#showcase li");
 	$items.on("click", function(){
