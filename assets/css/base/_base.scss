@@ -4,11 +4,12 @@ html{
 }
 body{
   min-with: 400px;
+  height: 100%;
   background: /*url("img/bg_body.png") no-repeat scroll center center*/ #FAFAFA;
 
   /*background: url("img/bg-gradient-sand.png") repeat-x scroll 0 0px, url("img/bg-sand.png") repeat scroll 0 0px, none repeat scroll 0 0 #F5F1E8;*/
 
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
   /*background: url("img/bullet.png");*/
 }
@@ -26,6 +27,8 @@ h1{
 
 /*****CONTAINER*****/
 #container{
+  height: 100%;
+  //background-image: url('../img/bullet.png')
 }
 
 
@@ -34,7 +37,8 @@ h1{
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-top: 80px;
+  height: 75%;
+  min-height: 500px;
 }
 #content a:hover{
 }

@@ -3,12 +3,13 @@
 #container > footer {
   clear: both;
   position: relative;
-  border-top: 0px solid #f8c47f;
+  border-top: 0 solid #C3DCED;
   border-bottom: 0px solid #f8c47f;
-  padding: 10px;
-  height: 130px;
+  height: 25%;
+  background-image: url('../img/dark-grey-tile.png');
   background-color: #453c37;
-  //box-shadow: 0 0 2px 3px #f8c47f;
+  background-color: rgba(69, 60, 55, 1);
+  //box-shadow: 0 0 5px 3px #9d9d9d;
 }
   #container > footer #stripe{
     padding-top: 50px;

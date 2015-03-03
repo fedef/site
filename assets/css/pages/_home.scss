@@ -47,7 +47,7 @@ section#portfolio{
       @include transition();
       & div{
         position: relative;
-        height: $portfolio-thumb-width/2;
+        height: $portfolio-thumb-width;
         background: rgba(255,255,255,0.4);
         @include transition(500ms);
       }
@@ -81,8 +81,8 @@ section#portfolio{
       }
     }
     & li:hover{
-      width: 150px;
-      height: 150px;
+      width: 120px;
+      height: 120px;
       & div{
         height: 0;
       }
