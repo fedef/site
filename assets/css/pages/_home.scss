@@ -1,93 +1,114 @@
-section#presentation, section#portfolio{
-  margin: 50px 4%;
-}
-section#presentation{
-  width: 42%;
-  min-width: 600px;
+#main > header h1{
+  margin: 180px 0 0 0;
   text-align: center;
-  header{
-    float: right;
-    h1{
-      font-size: 150%;
-      color: #BBBBBB;
-    }
-    h2{
-      font-size: 120%;
-      color: #888888;
-    }
-    p span{
-      position: relative;
-      left: 82px;
-      padding: 2px 10px 2px 10px;
-      font-size: 18px;
-      letter-spacing: 1px;
-      text-shadow: 0 0 2px #FFFFFF;
-      color: #000000;
+  color: #777777;
+}
+section#main{
+  flex-grow: 1;
+
+  section#presentation, section#tipi-sito{
+    margin: 20px 4%;
+  }
+  section#presentation{
+    width: 42%;
+    min-width: 600px;
+    text-align: center;
+    header{
+      h1{
+        font-size: 150%;
+        color: #BBBBBB;
+      }
+      h2{
+        font-size: 120%;
+        color: #888888;
+      }
+      p span{
+        position: relative;
+        left: 82px;
+        padding: 2px 10px 2px 10px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        text-shadow: 0 0 2px #FFFFFF;
+        color: #000000;
+      }
     }
   }
-}
-section#portfolio{
-  flex-grow: 1;
-  & ul#showcase{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin: auto;
-    padding: 0;
-    & li{
-      flex-shrink: 0;
-      position: relative;
-      overflow: hidden;
-      margin: 15px;
-      width: $portfolio-thumb-width;
-      height: $portfolio-thumb-width;
-      list-style-type: none;
-      border-radius: 50%;
-      @include transition();
-      & div{
+  section#tipi-sito{
+    flex-grow: 1;
+    & ul#showcase{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin: auto;
+      padding: 0;
+      & li{
+        flex-shrink: 0;
         position: relative;
+        overflow: hidden;
+        margin: 15px;
+        border: 2px solid #999999;
+        width: $portfolio-thumb-width;
         height: $portfolio-thumb-width;
-        background: rgba(255,255,255,0.4);
-        @include transition(500ms);
-      }
-      &#studiobf{
-        background: #41d056;
-      }
-      &#amministrazionimmobiliari{
-        background: #FF0208;
-      }
-      &#commercioequogrosseto{
-        background: #910039;
-      }
-      &#ilsassolinobianco{
-        background: #DFDEE4;
-      }
-      & a{
-        position: absolute;
-        display: block;
-        top: 50%;
-        padding: 2% 10%;
-        width: 80%;
-        height: $portfolio-thumb-width/3;
-        font-size: 10px;
-        font-style: italic;
-        text-transform: capitalize;
-        text-indent: -8px;
-        color: #FFFFFF;
-        background-color: rgba(0,0,0, 0.5);
-        opacity: 1;
+        list-style-type: none;
+        border-radius: 50%;
         @include transition();
+        & div{
+          position: relative;
+          top: 50%;
+          left: 50%;
+          width: 0;
+          height: 0;
+          background: #E6E6E6;
+          border-radius: 50%;
+          @include transition();
+        }
+        &#studiobf{
+          background: #41d056;
+        }
+        &#amministrazionimmobiliari{
+          background: #FF0208;
+        }
+        &#commercioequogrosseto{
+          background: #910039;
+        }
+        &#ilsassolinobianco{
+          background: #DFDEE4;
+        }
+        & a{
+          position: absolute;
+          display: block;
+          top: 25%;
+          left: 25%;
+          width: 50%;
+          height: 50%;
+          font-size: 10px;
+          font-style: italic;
+          text-transform: capitalize;
+          text-indent: -8px;
+          color: #FFFFFF;
+          background-color: rgba(0,0,0, 0.5);
+          opacity: 1;
+          border-radius: 50%;
+          @include transition();
+        }
       }
-    }
-    & li:hover{
-      width: 120px;
-      height: 120px;
-      & div{
-        height: 0;
-      }
-      & a{
-        font-size: 12px;
+      & li:hover{
+        width: 120px;
+        height: 120px;
+        & div{
+          top: 25%;
+          left: 25%;
+          width: 50%;
+          height: 50%;
+        }
+        & a{
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          font-size: 12px;
+        }
       }
     }
   }
@@ -96,7 +117,7 @@ section#portfolio{
 @media (max-width: 800px) {
   #content{
     flex-wrap: wrap;
-    section#presentation, section#portfolio{
+    section#presentation, section#tipi-sito{
       flex-grow: 1;
       margin: 10px 0;
     }
@@ -105,7 +126,7 @@ section#portfolio{
         float: none;
       }
     }
-    section#portfolio{
+    section#tipi-sito{
       margin-bottom: 20px;
       ul#showcase{
         justify-content: center;
@@ -114,7 +135,7 @@ section#portfolio{
   }
 }
 @media (max-width: 620px){
-  section#portfolio{
+  section#tipi-sito{
     ul#showcase{
       li:hover{
         width: $portfolio-thumb-width;

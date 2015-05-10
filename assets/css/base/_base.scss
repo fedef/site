@@ -5,7 +5,7 @@ html{
 body{
   min-with: 400px;
   height: 100%;
-  background: /*url("img/bg_body.png") no-repeat scroll center center*/ #FAFAFA;
+  background: /*url("img/bg_body.png") no-repeat scroll center center*/ #E6E6E6;
 
   /*background: url("img/bg-gradient-sand.png") repeat-x scroll 0 0px, url("img/bg-sand.png") repeat scroll 0 0px, none repeat scroll 0 0 #F5F1E8;*/
 
@@ -27,6 +27,7 @@ h1{
 
 /*****CONTAINER*****/
 #container{
+  display: flex;
   height: 100%;
   //background-image: url('../img/bullet.png')
 }
@@ -36,9 +37,7 @@ h1{
 #content{
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  height: 75%;
-  min-height: 500px;
+  justify-content: center;
 }
 #content a:hover{
 }

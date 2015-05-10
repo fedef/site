@@ -1,110 +1,44 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" >
-<head>
-	<meta charset="utf-8">
-	<meta name="description" content="fedef.net - web agency - siti su misura">
-	<meta name="keywords" content="fedef.net fedef web siti sito internet statico dinamico mobile Brescia agency agenzia realizzazione su misura">
-	<meta name="author" content="fedef.net">
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-	<title>fedef.net ::: web agency ::: siti su misura --- work in progress --- </title>
-
-	<link rel="stylesheet" href="assets/css/main.css">
-
-	<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:700,400,300' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
-	<!--  http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js -->
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
-	<script type="text/javascript" src="assets/js/site.js"></script>
-
-	<!-- <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script> -->
+---
+---
 
 
-	<!--
-	<script src="../js/superfish.js"></script>
-	<script src="../js/hoverIntent.js"></script>
-	-->
+{% include header.html %}
 
-	<!--[if lt IE 9]>
-		<script src="../js/html5shiv.js"></script>
-	<![endif]-->
-</head>
-<body>
-<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<div id="container">
 
-	ga('create', 'UA-10012738-3', 'auto');
-	ga('send', 'pageview');
+	{% include left.html %}
 
-</script>
-
-<section id="container">
-
-	<header>
-
-			<div id="header-content">
-				<div id="sinistra">
-
-						<div id ="web">
-							<h1><span class="colon">:</span><span class="slash">//</span><span>Web</span></h1>
-						</div>
-						<a href="http://www.fedef.net"><div id="logo"></div></a>
-						<div id="titolo">
-							<h1><a href="http://www.fedef.net">FEDEF&nbsp;</a></h1>
-						</div>
-				</div>
-				<div id="destra">
-						<div id="agency">
-							<h1><span class="slash">/</span><span>Agency</span></h1>
-						</div>
-						<div id="motto">
-								<h2><span>Siti web professionali &nbsp;&nbsp;</span><span class="su"><i class="icon-ruler"></i>su </span><span class="misura">misura <i class="icon-scissors"></i></span></h2>
-						</div>
-
-				</div>
-		</div>
-	</header>
-	<div id="content">
-		<section id="presentation">
-			<header>
-				<h1> Solo quello che ti serve </h1>
-				<h2 id="opzioni"><i class="icon-equalizer"></i> Varie opzioni realizzative a seconda delle necessità  </h2>
-				<h2><i class="icon-mobile2"></i> Predisposizione per i dispositivi mobili  </h2>
-				<h2><i class="icon-meter"></i> Massima leggerezza e velocità per le tue pagine  </h2>
-				<h2><i class="icon-html52"></i> Sempre secondo gli ultimi stadard della rete  </h2>
-				<h2><i class="icon-search"></i> Ottimizzazione per i motori di ricerca  </h2>
-			</header>
+	<section id="main">
+		<header>
+			<h1>Siti WEB professionali <span>su misura</span></h1>
+		</header>
+		<section id="content">
+			<section id="presentation">
+				<header>
+					<h1> Solo quello che ti serve </h1>
+					<h2 id="opzioni"><i class="icon-equalizer"></i> Varie opzioni realizzative a seconda delle necessità  </h2>
+					<h2><i class="icon-mobile2"></i> Predisposizione per i dispositivi mobili  </h2>
+					<h2><i class="icon-meter"></i> Massima leggerezza e velocità per le tue pagine  </h2>
+					<h2><i class="icon-html52"></i> Sempre secondo gli ultimi stadard della rete  </h2>
+					<h2><i class="icon-search"></i> Ottimizzazione per i motori di ricerca  </h2>
+				</header>
+			</section>
+			<section id="tipi-sito">
+		    <ul id="showcase">
+		      <li id="statico"><a ><div>statico</div></a></li>
+		      <li id="cms"><a ><div>cms</div></a></li>
+		      <li id="app"><a ><div>one page app</div></a></li>
+		      <li id="quarto"><a ><div>tipo4</div></a></li>
+		    </ul>
+		  </section>
 		</section>
-		<section id="portfolio">
-			<ul id="showcase">
-				<li id="studiobf"><div></div><a onclick="window.open('http://www.studiobf.biz');return false" href="http://www.studiobf.biz">studiobf</a></li>
-				<li id="amministrazionimmobiliari"><div></div><a onclick="window.open('http://www.amministrazionimmobiliari.com');return false" href="http://www.amministrazionimmobiliari.com">amministrazioni<br/>immobiliari</a></li>
-				<li id="commercioequogrosseto"><div></div><a onclick="window.open('http://www.commercioequogrosseto.it');return false" href="http://www.commercioequogrosseto.it">commercioequo<br/>grosseto</a></li>
-				<li id="ilsassolinobianco"><div></div><a onclick="window.open('http://www.ilsassolinobianco.org');return false" href="http://www.ilsassolinobianco.org">sassolino<br/>bianco</a></li>
-			</ul>
-		</section>
-	</div>
-<footer>
-	<div>
-		<div id="stripe">
-			<p>fedef.net &copy; <span id="copyright-year"></span> -
-				<a href="mailto:info@fedef.net" title="mandaci una email">
-					<img alt="email" src="assets/img/ico_email2.png">&nbsp;&nbsp;info@fedef.net
-				</a> -
-				<img alt="email" src="assets/img/ico_phone.png">&nbsp;&nbsp;3382067109
-			</p>
-		</div>
-		<div id="internetdefenseleague">
-			<a href="http://internetdefenseleague.org"><img src="assets/img/internet_defense_league_badge.png" alt="Member of The Internet Defense League"/></a>
-		</div>
-	</div>
-</footer>
+		{% include footer.html %}
+	</section>
 
-</section>
+</div>
+
+
+
 
 </body>
 </html>

@@ -1,52 +1,53 @@
 /*****FOOTER*****/
 
-#container > footer {
+#main > footer {
   clear: both;
-  position: relative;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
   border-top: 0 solid #C3DCED;
   border-bottom: 0px solid #f8c47f;
-  height: 25%;
-  background-image: url('../img/dark-grey-tile.png');
-  background-color: #453c37;
-  background-color: rgba(69, 60, 55, 1);
+  height: 25px;
+  //background-image: url('../img/dark-grey-tile.png');
+  //background-color: #453c37;
+  //background-color: rgba(69, 60, 55, 1);
   //box-shadow: 0 0 5px 3px #9d9d9d;
-}
-  #container > footer #stripe{
-    padding-top: 50px;
+  #stripe{
     height:11px;
     text-align: center;
     color: #000000;
-  }
-    #container > footer #stripe a{
+    a{
       height:11px;
       color: #A8D5FC;
       text-shadow: none;
     }
-    #container > footer #stripe a:hover{
+    a:hover{
       *color: #FFFFFF;
       font-weight: bold;
       *text-shadow: 3px 3px 3px #0A35B5, -3px -3px 3px #0A35B5;
     }
-    #container > footer #stripe p{
+    p{
       margin: -1px 0;
       padding: 0;
       font-size: 12px;
       text-transform: uppercase;
       color: #f8c47f;
     }
-    #container > footer #stripe img{
+    img{
       position: relative;
       top: 1px;
       height: 11px;
     }
-
-  #container > footer #internetdefenseleague{
-    position: absolute;
-    right: 25px;
-    bottom: 25px;
-    font-size: 10px;
   }
-    #internetdefenseleague img{
+  #internetdefenseleague{
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+    font-size: 10px;
+    img{
       width: 25px;
       height: 25px;
     }
+  }
+}
