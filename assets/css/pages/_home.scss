@@ -12,6 +12,7 @@ section#main{
   section#presentation{
     width: 42%;
     min-width: 600px;
+    min-height: 340px;
     text-align: center;
     header{
       h1{
@@ -35,79 +36,75 @@ section#main{
   }
   section#tipi-sito{
     flex-grow: 1;
-    & ul#showcase{
+    ul#showcase{
       display: flex;
       align-items: center;
       justify-content: flex-start;
       flex-wrap: wrap;
       margin: auto;
       padding: 0;
-      & li{
+      li{
         flex-shrink: 0;
         position: relative;
         overflow: hidden;
         margin: 15px;
-        border: 2px solid #999999;
+        border: 1px solid #999999;
         width: $portfolio-thumb-width;
         height: $portfolio-thumb-width;
         list-style-type: none;
         border-radius: 50%;
         @include transition();
-        & div{
+        &>div{
           position: relative;
-          top: 50%;
-          left: 50%;
-          width: 0;
-          height: 0;
-          background: #E6E6E6;
-          border-radius: 50%;
-          @include transition();
-        }
-        &#studiobf{
-          background: #41d056;
-        }
-        &#amministrazionimmobiliari{
-          background: #FF0208;
-        }
-        &#commercioequogrosseto{
-          background: #910039;
-        }
-        &#ilsassolinobianco{
-          background: #DFDEE4;
-        }
-        & a{
-          position: absolute;
-          display: block;
           top: 25%;
           left: 25%;
           width: 50%;
           height: 50%;
-          font-size: 10px;
-          font-style: italic;
-          text-transform: capitalize;
-          text-indent: -8px;
-          color: #FFFFFF;
-          background-color: rgba(0,0,0, 0.5);
-          opacity: 1;
+          background: #999999;
           border-radius: 50%;
           @include transition();
+          div{
+            position: absolute;
+            display: block;
+            top: 50%;
+            left: 50%;
+            width: 0%;
+            height: 0%;
+            font-size: 10px;
+            font-style: italic;
+            text-transform: capitalize;
+            text-align: center;
+            text-indent: -8px;
+            color: #FFFFFF;
+            background-color: #E6E6E6;
+            opacity: 1;
+            border-radius: 50%;
+            @include transition();
+            div{
+
+            }
+          }
         }
       }
-      & li:hover{
-        width: 120px;
-        height: 120px;
-        & div{
-          top: 25%;
-          left: 25%;
-          width: 50%;
-          height: 50%;
-        }
-        & a{
+      li:hover{
+        width: 150px;
+        height: 150px;
+        &>div{
           top: 0;
           left: 0;
           width: 100%;
           height: 100%;
-          font-size: 12px;
+          div{
+            top: 10%;
+            left: 10%;
+            width: 80%;
+            height: 80%;
+            font-size: 14px;
+            color: #999999;
+            div{
+
+            }
+          }
         }
       }
     }
