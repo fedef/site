@@ -23,7 +23,7 @@
       font-weight: 300;
     }
   }
-  ul{
+  ul.menu{
     margin: 0;
     padding: 0;
     padding-right: 20px;
@@ -34,6 +34,9 @@
     }
     a:hover{
       font-weight: bold;
+    }
+    a.active{
+      font-size: 150%;
     }
   }
   footer{

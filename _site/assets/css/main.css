@@ -558,16 +558,18 @@ a:hover {
     color: #A8D5FC; }
     #left #nome:hover {
       font-weight: 300; }
-  #left ul {
+  #left ul.menu {
     margin: 0;
     padding: 0;
     padding-right: 20px;
     list-style-type: none;
     text-align: right; }
-    #left ul li {
+    #left ul.menu li {
       margin-bottom: 10px; }
-    #left ul a:hover {
+    #left ul.menu a:hover {
       font-weight: bold; }
+    #left ul.menu a.active {
+      font-size: 150%; }
   #left footer {
     position: absolute;
     left: 0;
