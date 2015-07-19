@@ -444,15 +444,20 @@ a:hover {
   transition: top 0.12s ease-out 0s; }
 
 /*****CONTAINER*****/
-#container {
-  display: flex;
-  height: 100%; }
-
 /*****CONTENT*****/
 #content {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+section#main {
+  margin-left: 200px; }
+  section#main > header {
+    overflow: hidden; }
+    section#main > header h1 {
+      margin: 180px 0 0 0;
+      text-align: center;
+      color: #777777; }
 
 /***MEDIA***/
 @media (max-width: 600px) {
@@ -538,12 +543,13 @@ a:hover {
   #container > header #header-content #destra #motto {
     left: 200px; } }
 #left {
-  float: left;
-  position: relative;
+  position: fixed;
   width: 200px;
-  min-width: 200px;
   height: 100%;
-  background-color: #FFFFFF; }
+  min-width: 200px;
+  text-align: right;
+  background-color: #FFFFFF;
+  border-right: 3px solid #C3DCED; }
   #left #logo {
     margin: 20px 20px 5px 20px;
     height: 160px;
@@ -555,41 +561,64 @@ a:hover {
     font-size: 180%;
     text-align: center;
     text-transform: lowercase;
-    color: #A8D5FC; }
+    color: #1a588e; }
     #left #nome:hover {
       font-weight: 300; }
-  #left ul.menu {
+  #left ul {
     margin: 0;
     padding: 0;
     padding-right: 20px;
-    list-style-type: none;
-    text-align: right; }
+    list-style-type: none; }
+    #left ul a:hover {
+      font-weight: bold; }
+  #left ul.menu {
+    padding: 0;
+    font-size: 150%; }
     #left ul.menu li {
       margin-bottom: 10px; }
-    #left ul.menu a:hover {
-      font-weight: bold; }
     #left ul.menu a.active {
       font-size: 150%; }
+      #left ul.menu a.active span.list-icon {
+        background-color: #C3DCED; }
+    #left ul.menu span.list-icon {
+      display: inline-block;
+      position: relative;
+      left: 10px;
+      top: 2px;
+      border: 3px solid #C3DCED;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #FFFFFF; }
   #left footer {
     position: absolute;
     left: 0;
     bottom: 20px;
     width: 100%; }
-    #left footer ul#contatti {
-      margin: 0;
-      list-style-type: none; }
-      #left footer ul#contatti li {
-        margin-top: 15px;
-        text-transform: uppercase;
-        color: #A8D5FC; }
-      #left footer ul#contatti #tel span {
-        font-weight: bold; }
+    #left footer ul#contatti li {
+      margin-top: 15px;
+      text-transform: uppercase;
+      color: #6db0eb; }
+      #left footer ul#contatti li p {
+        margin: 5px 0; }
+      #left footer ul#contatti li p:last-child {
+        color: #1a588e; }
+    #left footer ul#contatti li#email p:first-child {
+      text-transform: uppercase; }
+    #left footer ul#contatti li#email p:last-child {
+      text-transform: lowercase; }
+    #left footer ul#contatti li#tel p:first-child {
+      font-weight: bold; }
+    #left footer ul#contatti li#tel p:last-child {
+      font-weight: normal; }
     #left footer a {
       height: 11px;
+      font-weight: bold;
       text-shadow: none;
-      color: #A8D5FC; }
+      color: #6db0eb; }
     #left footer a:hover {
       font-weight: bold;
+      color: #1a588e;
       *text-shadow: 3px 3px 3px #0A35B5, -3px -3px 3px #0A35B5; }
 
 /*****FOOTER*****/
@@ -693,106 +722,95 @@ span.misura3 {
   font-size: 80%;
   line-height: 78px; }
 
-#main > header h1 {
-  margin: 180px 0 0 0;
-  text-align: center;
-  color: #777777; }
-
-section#main {
-  flex-grow: 1; }
-  section#main section#presentation, section#main section#tipi-sito {
-    margin: 20px 4%; }
-  section#main section#presentation {
-    width: 42%;
-    min-width: 600px;
-    text-align: center; }
-    section#main section#presentation header h1 {
-      font-size: 150%;
-      color: #BBBBBB; }
-    section#main section#presentation header h2 {
-      font-size: 120%;
-      color: #888888; }
-    section#main section#presentation header p span {
+section#main section#presentation, section#main section#tipi-sito {
+  margin: 20px 4%; }
+section#main section#presentation {
+  text-align: center; }
+  section#main section#presentation header h1 {
+    font-size: 150%;
+    color: #BBBBBB; }
+  section#main section#presentation header h2 {
+    font-size: 120%;
+    color: #888888; }
+  section#main section#presentation header p span {
+    position: relative;
+    left: 82px;
+    padding: 2px 10px 2px 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 2px #FFFFFF;
+    color: #000000; }
+section#main section#tipi-sito ul#showcase {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 0; }
+  section#main section#tipi-sito ul#showcase li {
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    margin: 15px;
+    border: 2px solid #999999;
+    width: 100px;
+    height: 100px;
+    list-style-type: none;
+    border-radius: 50%;
+    -webkit-transition: all 0.15s ease-out 0s;
+    -moz-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s; }
+    section#main section#tipi-sito ul#showcase li div {
       position: relative;
-      left: 82px;
-      padding: 2px 10px 2px 10px;
-      font-size: 18px;
-      letter-spacing: 1px;
-      text-shadow: 0 0 2px #FFFFFF;
-      color: #000000; }
-  section#main section#tipi-sito {
-    flex-grow: 1; }
-    section#main section#tipi-sito ul#showcase {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-      margin: auto;
-      padding: 0; }
-      section#main section#tipi-sito ul#showcase li {
-        flex-shrink: 0;
-        position: relative;
-        overflow: hidden;
-        margin: 15px;
-        border: 2px solid #999999;
-        width: 100px;
-        height: 100px;
-        list-style-type: none;
-        border-radius: 50%;
-        -webkit-transition: all 0.15s ease-out 0s;
-        -moz-transition: all 0.15s ease-out 0s;
-        transition: all 0.15s ease-out 0s; }
-        section#main section#tipi-sito ul#showcase li div {
-          position: relative;
-          top: 50%;
-          left: 50%;
-          width: 0;
-          height: 0;
-          background: #E6E6E6;
-          border-radius: 50%;
-          -webkit-transition: all 0.15s ease-out 0s;
-          -moz-transition: all 0.15s ease-out 0s;
-          transition: all 0.15s ease-out 0s; }
-        section#main section#tipi-sito ul#showcase li#studiobf {
-          background: #41d056; }
-        section#main section#tipi-sito ul#showcase li#amministrazionimmobiliari {
-          background: #FF0208; }
-        section#main section#tipi-sito ul#showcase li#commercioequogrosseto {
-          background: #910039; }
-        section#main section#tipi-sito ul#showcase li#ilsassolinobianco {
-          background: #DFDEE4; }
-        section#main section#tipi-sito ul#showcase li a {
-          position: absolute;
-          display: block;
-          top: 25%;
-          left: 25%;
-          width: 50%;
-          height: 50%;
-          font-size: 10px;
-          font-style: italic;
-          text-transform: capitalize;
-          text-indent: -8px;
-          color: #FFFFFF;
-          background-color: rgba(0, 0, 0, 0.5);
-          opacity: 1;
-          border-radius: 50%;
-          -webkit-transition: all 0.15s ease-out 0s;
-          -moz-transition: all 0.15s ease-out 0s;
-          transition: all 0.15s ease-out 0s; }
-      section#main section#tipi-sito ul#showcase li:hover {
-        width: 120px;
-        height: 120px; }
-        section#main section#tipi-sito ul#showcase li:hover div {
-          top: 25%;
-          left: 25%;
-          width: 50%;
-          height: 50%; }
-        section#main section#tipi-sito ul#showcase li:hover a {
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          font-size: 12px; }
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: #E6E6E6;
+      border-radius: 50%;
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s; }
+    section#main section#tipi-sito ul#showcase li#studiobf {
+      background: #41d056; }
+    section#main section#tipi-sito ul#showcase li#amministrazionimmobiliari {
+      background: #FF0208; }
+    section#main section#tipi-sito ul#showcase li#commercioequogrosseto {
+      background: #910039; }
+    section#main section#tipi-sito ul#showcase li#ilsassolinobianco {
+      background: #DFDEE4; }
+    section#main section#tipi-sito ul#showcase li a {
+      position: absolute;
+      display: block;
+      top: 25%;
+      left: 25%;
+      width: 50%;
+      height: 50%;
+      font-size: 10px;
+      font-style: italic;
+      text-transform: capitalize;
+      text-indent: -8px;
+      color: #FFFFFF;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 1;
+      border-radius: 50%;
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s; }
+  section#main section#tipi-sito ul#showcase li:hover {
+    width: 120px;
+    height: 120px; }
+    section#main section#tipi-sito ul#showcase li:hover div {
+      top: 25%;
+      left: 25%;
+      width: 50%;
+      height: 50%; }
+    section#main section#tipi-sito ul#showcase li:hover a {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 12px; }
 
 /***MEDIA***/
 @media (max-width: 800px) {

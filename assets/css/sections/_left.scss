@@ -1,10 +1,12 @@
 #left{
-  float: left;
-  position: relative;
+  position: fixed;
   width: 200px;
-  min-width: 200px;
   height: 100%;
+  min-width: 200px;
+  text-align: right;
   background-color: #FFFFFF;
+  //box-shadow: 2px 0 3px #aaaaaa;
+  border-right: 3px solid #C3DCED;
   #logo{
     margin: 20px 20px 5px 20px;
     height: 160px;
@@ -18,25 +20,43 @@
     font-size: 180%;
     text-align: center;
     text-transform: lowercase;
-    color: #A8D5FC;
+    color: #1a588e;
     &:hover{
       font-weight: 300;
     }
   }
-  ul.menu{
+  ul{
     margin: 0;
     padding: 0;
     padding-right: 20px;
     list-style-type: none;
-    text-align: right;
-    li{
-      margin-bottom: 10px;
-    }
     a:hover{
       font-weight: bold;
     }
+  }
+  ul.menu{
+    padding: 0;
+    font-size: 150%;
+    li{
+      margin-bottom: 10px;
+    }
     a.active{
       font-size: 150%;
+      span.list-icon{
+        background-color: #C3DCED;
+      }
+    }
+    span.list-icon{
+      display: inline-block;
+      position: relative;
+      left: 10px;
+      top: 2px;
+      border: 3px solid #C3DCED;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #FFFFFF;
+
     }
   }
   footer{
@@ -45,25 +65,43 @@
     bottom: 20px;
     width: 100%;
     ul#contatti{
-      margin: 0;
-      list-style-type: none;
       li{
         margin-top: 15px;
         text-transform: uppercase;
-        color: #A8D5FC;
+        color: #6db0eb;
+        p{
+          margin: 5px 0;
+        }
+        p:last-child{
+          color: #1a588e;
+        }
       }
-      #tel span{
-        font-weight: bold;
-
+      li#email{
+        p:first-child{
+          text-transform: uppercase;
+        }
+        p:last-child{
+          text-transform: lowercase;
+        }
+      }
+      li#tel{
+        p:first-child{
+          font-weight: bold;
+        }
+        p:last-child{
+          font-weight: normal;
+        }
       }
     }
     a{
       height:11px;
+      font-weight: bold;
       text-shadow: none;
-      color: #A8D5FC;
+      color: #6db0eb;
     }
     a:hover{
       font-weight: bold;
+      color: #1a588e;
       *text-shadow: 3px 3px 3px #0A35B5, -3px -3px 3px #0A35B5;
     }
   }

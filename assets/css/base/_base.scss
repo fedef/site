@@ -27,8 +27,6 @@ h1{
 
 /*****CONTAINER*****/
 #container{
-  display: flex;
-  height: 100%;
   //background-image: url('../img/bullet.png')
 }
 
@@ -40,6 +38,17 @@ h1{
   justify-content: center;
 }
 #content a:hover{
+}
+section#main{
+    margin-left: 200px;
+  > header{
+    overflow: hidden;
+    h1{
+      margin: 180px 0 0 0;
+      text-align: center;
+      color: #777777;
+    }
+  }
 }
 /***MEDIA***/
 @media (max-width: 600px) {
